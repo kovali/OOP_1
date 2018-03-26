@@ -50,15 +50,15 @@ class Flash
         $this->session = new Session;
     }
 
-    public function setMessage($name, $key)
+    public function setMessage($key, $value)
 
     {
-        $this->session->set($name, $key);
+        $this->session->set($key, $value);
     }
 
-    public function getMessage($name)
+    public function getMessage($key)
     {
-        return $this->session->get($name);
+        return $this->session->get($key);
     }
 
 }
